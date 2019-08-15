@@ -39,7 +39,7 @@ module.exports = {
 
     updateScore: (iduser, data) => {
         return new Promise((resolve, reject) => {
-            conn.query('UPDATE skor SET skor = ? WHERE iduser = ?', [data, iduser], (err, result) => {
+            conn.query('UPDATE skor SET ? WHERE iduser = ?', [data, iduser], (err, result) => {
                 if (!err) {
                     resolve(result)
                 } else {
