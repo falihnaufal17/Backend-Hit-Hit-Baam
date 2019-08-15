@@ -6,7 +6,7 @@ const cors = require('cors')
 const xssFilter = require('x-xss-protection')
 const logger = require('morgan')
 
-const port = process.env.SERVER_PORT || 1700
+const port = process.env.PORT || 1700
 
 const userRoutes = require('./src/routes/user')
 const scoreRoutes = require('./src/routes/score')
