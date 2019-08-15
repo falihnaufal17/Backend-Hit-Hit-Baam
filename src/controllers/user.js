@@ -102,7 +102,7 @@ module.exports = {
 
                     userModel.updateToken(username, token)
                         .then((resultToken) => {
-                            return miscHelpers.response(res, dataUser, 200)
+                            return miscHelpers.response(res, resultToken, 200)
                         })
                         .catch((error) => {
                             console.log(error)
